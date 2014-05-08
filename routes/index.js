@@ -10,11 +10,11 @@ client.connect(function (err) {
     if (err) {
         return console.error('could not connect to postgres', err);
     }
-    client.query('SELECT "PartOfSpeech_Name" FROM "PartsOfSpeech" AS "theNoun"', function (err, result) {
+    client.query('SELECT "PartOfSpeech_Name" FROM "PartsOfSpeech"', function (err, result) {
         if (err) {
             return console.error('error running query', err);
         }
-        cons = result.rows[0].theNoun;
+        cons = result.rows[0];
         //output: Tue Jan 15 2013 19:12:47 GMT-600 (CST)
         client.end();
     });
