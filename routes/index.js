@@ -24,6 +24,7 @@ client.connect(function (err) {
             return;
         }
         cons = result.rows[0].theParts;
+        console.log(result);
         client.end();
     })
 });
