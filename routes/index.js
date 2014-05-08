@@ -14,7 +14,7 @@ client.connect(function (err) {
         if (err) {
             return console.error('error running query', err);
         }
-        cons = result.rows[0];
+        cons = result.rows[0].toString();
         //output: Tue Jan 15 2013 19:12:47 GMT-600 (CST)
         client.end();
     });
