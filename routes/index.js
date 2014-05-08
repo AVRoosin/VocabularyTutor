@@ -30,6 +30,7 @@ client.connect(function (err) {
 
 
 exports.index = function (req, res) {
-    res.render('index', { title: 'Vocabulary Tutor' + cons });
+    res.render('index', { title: 'Vocabulary Tutor' + cons + " _ " + cons[0] });
+    console.log(cons);
 };
 
