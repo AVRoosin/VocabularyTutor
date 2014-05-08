@@ -21,10 +21,10 @@ client.connect(function (err) {
     client.query('SELECT * FROM "PartsOfSpeech" AS "theParts"', function (err, result) {
         if (err) {
             cons = "error running query";
-            return;
         }
-        cons = result;
-        alert(result);
+        else{
+        cons = result.rows[0].theParts;
+        alert(result);}
         client.end();
     })
 });
