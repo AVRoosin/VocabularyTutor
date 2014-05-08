@@ -23,8 +23,8 @@ client.connect(function (err) {
             cons = "error running query";
             return;
         }
-        cons = result.rows[0].theParts;
-        console.log(result);
+        cons = result;
+        alert(result);
         client.end();
     })
 });
@@ -32,5 +32,6 @@ client.connect(function (err) {
 
 exports.index = function (req, res) {
     res.render('index', { title: 'Vocabulary Tutor' + cons });
+    console.log(cons);
 };
 
