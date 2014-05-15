@@ -22,8 +22,8 @@ client.connect(function (err) {
 //        if (err) {
 //            cons = "error running query";
 //        }
-//        cons = result.rows[0].theParts;
-//        alert(result);
+//        cons = result.rows[0].PartOfSpeech_Name;
+//        console.log(result.rows[0].PartOfSpeech_Name);
 //        client.end();
 //    });
 });
@@ -31,5 +31,6 @@ client.connect(function (err) {
 
 exports.index = function (req, res) {
     res.render('index', { title: 'Vocabulary Tutor' + cons });
+    console. log(cons);
 };
 
