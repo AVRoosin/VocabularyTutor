@@ -7,12 +7,12 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-var config = require('config');
+//var config = require('config');
 //var log = require('libs/log')(module);
 
 var app = express();
 // all environments
-app.set('port', process.env.PORT || config.get('port'));
+app.set('port', process.env.PORT /*|| config.get('port')*/ || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.favicon());
