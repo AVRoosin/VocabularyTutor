@@ -8,7 +8,7 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 //var config = require('config');
-var log = require('libs/log')(module);
+//var log = require('libs/log')(module);
 
 var app = express();
 // all environments
@@ -34,5 +34,5 @@ app.get('/', routes.index);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function () {
-    log.info('Express server listening on port ' + app.get('port'));
+    console.log('Express server listening on port ' + app.get('port'));
 });
