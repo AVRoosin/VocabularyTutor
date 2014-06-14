@@ -50,6 +50,9 @@ app.get('./public/vendor/bower_components/jquery/dist/jquery.min.js', function (
 app.get('./public/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css', function (req, res, next) {
     res.sendfile('bootstrap.min.css');
 });
+app.get('./public/vendor/bower_components/normalize.css/normalize.css', function (req, res, next) {
+    res.sendfile('normalize.css');
+});
 
 
 http.createServer(app).listen(app.get('port'), function () {

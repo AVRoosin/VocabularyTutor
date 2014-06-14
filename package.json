@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "nconf": "^0.6.9",
+    "normalize.css": "^3.0.1",
     "winston": "^0.7.3"
   }
 }
