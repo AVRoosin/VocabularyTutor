@@ -2,11 +2,10 @@
  * Module dependencies.
  */
 
-
+var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
 var dictionary = require('./routes/dict');
-var express = require('express');
 var http = require('http');
 var path = require('path');
 var config = require('config');
