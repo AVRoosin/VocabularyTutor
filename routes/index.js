@@ -28,7 +28,7 @@
 ////    });
 //});
 
-var pgQuery = require('libs/pgQuery');
+
 exports.index = function (req, res, next) {
     var queryData;
 
