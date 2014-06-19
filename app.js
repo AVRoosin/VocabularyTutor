@@ -2,21 +2,23 @@
  * Module dependencies.
  */
 
-var express = require('express');
+
 var routes = require('./routes');
 var user = require('./routes/user');
+var dictionary = require('./routes/dict');
+var express = require('express');
 var http = require('http');
 var path = require('path');
 var config = require('config');
 var log = require('libs/log')(module);
-var engine=require('ejs-locals');
+var engine = require('ejs-locals');
 
 var app = express();
 // all environments
 app.set('port', process.env.PORT || config.get('port'));
 
 app.engine('ejs', engine); // layout partial block
-app.set('views',__dirname + '/views');
+app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.use(express.favicon());
@@ -36,7 +38,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
-
+app.get('/dict', dictionary.dict);
 //libs & styles
 //app.get('/public/css/style.css', function (req, res, next) {
 //    res.sendfile('style.css');

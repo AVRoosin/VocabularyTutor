@@ -12,12 +12,17 @@
   <body>
     <header>
       <%-blocks.header%>
+        <section class="container-fluid">
+            <%- partial('partials/header') %>
+        </section>
     </header>
-    <section>
+    <section class="container-fluid">
       <%-body -%>
     </section>
     <footer>
-      <%-blocks.footer%>
+        <section class="container-fluid">
+            <%- partial('partials/footer') %>
+        </section>
     </footer>
   </body>
 </html>

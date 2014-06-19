@@ -12,7 +12,9 @@
   },
   "devDependencies": {
     "nconf": "^0.6.9",
+    "nodeunit": "^0.9.0",
     "normalize.css": "^3.0.1",
+    "passport": "^0.2.0",
     "winston": "^0.7.3"
   }
 }
