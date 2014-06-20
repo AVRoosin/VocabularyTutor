@@ -10,7 +10,7 @@ function readTopics(parentId) {
         if (err) {
             return console.error('could not connect to postgres', err);
         }
-        client.query('SELECT "Topics"."Topic_Id", "Topics"."ParentTopic_Id", "TopicNames"."TopicName", "Topics"."Topicdescription" FROM public."Topics", public."TopicNames" WHERE "Topics"."TopicName_Id" = "TopicNames"."TopicName_Id" AND "Topics"."ParentTopic_Id"='+parentId.toString()+';', function (err, result) {
+        client.query('SELECT "Topics"."Topic_Id", "Topics"."ParentTopic_Id", "TopicNames"."TopicName", "Topics"."Topicdescription" FROM public."Topics", public."TopicNames" WHERE "Topics"."TopicName_Id" = "TopicNames"."TopicName_Id" AND "Topics"."ParentTopic_Id"=' + parentId.toString() + ';', function (err, result) {
             if (err) {
                 return console.error('error running query', err);
             }
@@ -22,11 +22,28 @@ function readTopics(parentId) {
     return cons;
 }
 var pgQuery = require('libs/pgQuery');
-exports.dict = function (req, res, next) {
-    var queryData=1;
+//var async = require('async');
 
-    console.log();
-    console.log("Topics: "+ pgQuery(queryData));
+exports.dict = function (req, res, next) {
+    var queryData = 1;
+//    var myCallback = function(data) {
+//        console.log('got data: '+data);
+//    };
+//    var usingItNow = function(callback) {
+//        callback(console.log('got it!'));
+//    };
+//    usingItNow(myCallback);
+//
+//    async.waterfall([
+//        function (callback) {
+//            callback(null, pgQuery(queryData));
+//        },
+//        function (response, callback) {
+//            //callback(null, res.render('pages/dict', { title: 'VT Dictionary', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ], data: response /*{ title: 'Vocabulary Tutor', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ] /*+ cons */}));
+//            callback(null, console.log(response)) ;
+//        }
+//    ]);
+    console.log(pgQuery(queryData));
     res.render('pages/dict', { title: 'VT Dictionary', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ], data: readTopics(1) /*{ title: 'Vocabulary Tutor', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ] /*+ cons */});
     //console. log(cons);
 };

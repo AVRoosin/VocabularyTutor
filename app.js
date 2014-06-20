@@ -6,6 +6,7 @@ var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
 var dictionary = require('./routes/dict');
+var test = require('./routes/wordTest');
 var http = require('http');
 var path = require('path');
 var config = require('config');
@@ -38,6 +39,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/dict', dictionary.dict);
+app.get('/wordTest', test.test);
 //libs & styles
 //app.get('/public/css/style.css', function (req, res, next) {
 //    res.sendfile('style.css');

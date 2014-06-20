@@ -30,9 +30,6 @@
 
 
 exports.index = function (req, res, next) {
-    var queryData;
-
-    console.log(pgQuery(1));
     res.render('pages/index', { title: 'Vocabulary Tutor', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ] /*{ title: 'Vocabulary Tutor', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ] /*+ cons */});
     //console. log(cons);
 };
