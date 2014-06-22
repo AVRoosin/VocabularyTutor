@@ -17,5 +17,5 @@
 //    });
 //});
 exports.test = function (req, res, next) {
-    res.render('pages/wordtest', { title: 'VT Test',pageInfo:"Сопоставьте слово с его переводом:", data: [ 'Kermit', 'Fozzie', 'Gonzo' ]});
+    res.render('pages/wordTest', { title: 'VT Test',pageInfo:"Сопоставьте слово с его переводом:", data: [ 'Kermit', 'Fozzie', 'Gonzo' ]});
 };
