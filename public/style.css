@@ -1,7 +1,9 @@
 .better-than-dead {
     color: red;
 }
-
+.answer{
+    width: 100px;
+}
 a {
     color: #00B7FF;
 }

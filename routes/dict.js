@@ -43,7 +43,7 @@ exports.dict = function (req, res, next) {
 //            callback(null, console.log(response)) ;
 //        }
 //    ]);
-    console.log(pgQuery(queryData));
+    //console.log(pgQuery(queryData));
     res.render('pages/dict', { title: 'VT Dictionary', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ], data: readTopics(1) /*{ title: 'Vocabulary Tutor', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ] /*+ cons */});
     //console. log(cons);
 };

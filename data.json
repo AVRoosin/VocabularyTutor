@@ -1,0 +1,63 @@
+{ "words": [
+    {
+        "id": 0,
+        "word": "few",
+        "trans": "несколько"
+    },
+    {
+        "id": 1,
+        "word": "handsome",
+        "trans": "привлекательный"
+    },
+    {
+        "id": 2,
+        "word": "quiet",
+        "trans": "тихий"
+    },
+    {
+        "id": 3,
+        "word": "loud",
+        "trans": "громкий"
+    },
+    {
+        "id": 4,
+        "word": "another",
+        "trans": "другой"
+    },
+    {
+        "id": 5,
+        "word": "rather",
+        "trans": "довольно-таки"
+    },
+    {
+        "id": 6,
+        "word": "wrong",
+        "trans": "неправильный"
+    },
+    {
+        "id": 7,
+        "word": "the same",
+        "trans": "тот же самый"
+    },
+    {
+        "id": 8,
+        "word": "pleasant",
+        "trans": "приятный"
+    },
+    {
+        "id": 9,
+        "word": "except",
+        "trans": "кроме"
+    },
+    {
+        "id": 10,
+        "word": "still",
+        "trans": "всё ещё"
+    },
+    {
+        "id": 11,
+        "word": "thin",
+        "trans": "тонкий"
+    }
+]
+}

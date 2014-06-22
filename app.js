@@ -6,7 +6,7 @@ var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
 var dictionary = require('./routes/dict');
-var test = require('./routes/wordTest');
+var test = require('./routes/wordtest');
 var http = require('http');
 var path = require('path');
 var config = require('config');
@@ -39,7 +39,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/dict', dictionary.dict);
-app.get('/wordTest', test.test);
+app.get('/wordtest', test.test);
 //libs & styles
 //app.get('/public/css/style.css', function (req, res, next) {
 //    res.sendfile('style.css');
@@ -56,7 +56,9 @@ app.get('./public/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css',
 app.get('./public/vendor/bower_components/normalize.css/normalize.css', function (req, res, next) {
     res.sendfile('normalize.css');
 });
-
+app.get('/data.json', function (req, res, next) {
+    res.sendfile('data.json');
+});
 
 http.createServer(app).listen(app.get('port'), function () {
     log.info('Express server listening on port ' + app.get('port'));

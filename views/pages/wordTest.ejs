@@ -1,10 +1,94 @@
 <% layout('../boilerplate') -%>
 <% stylesheet('style.css') -%>
-<div class="row">
-<h1 class="col-lg-12"> Добро пожаловать на страницу <%=title%>! <%=pageInfo%> </h1>
+
+<script type="text/javascript">
+    var allData = [];
+
+    function load(id){
+        console.log(id);
+        saveAnswers(id);
+        if (parseInt(localStorage.currentWord)<allData.length)
+        {
+            loadTest();
+        }
+        else{
+            document.location.href = "http://heroku-exp.herokuapp.com/stat";
+        }
+
+
+    }
+//        $("#5").click(function(){
+//            loadTest();
+//        });
+    function saveAnswers(answerId){
+        if(parseInt(answerId) === parseInt(localStorage.currentWord)-1){
+            var a=parseInt(localStorage.rightAnswers)+1;
+            localStorage.setItem("rightAnswers", a);
+        }
+    }
+    $(function loadData() {
+         if (typeof (localStorage) === "undefined") {
+            alert("Sorry, your browser does not support web storage...");
+        }
+        if (!localStorage.currentWord) {
+            localStorage.setItem("currentWord", 0);
+            localStorage.setItem("rightAnswers", 0);
+        }
+
+        $.getJSON("data.json", function(data) {
+            for(var i=0;i<data.words.length;i+=1)
+            {
+                allData.push([data.words[i].id, data.words[i].word, data.words[i].trans]);
+                //localStorage.setItem(data.words[i].id,data.words[i].word);
+            }
+            loadTest();
+        });
+    });
+//        function loadMenu() {
+//            $('.horizontalmenu').html('');
+//            if (!localStorage.length < 1) {
+//                for (var i = 0; i < localStorage.length; i++) {
+//                    var item = localStorage.getItem(localStorage.key(i));
+//                    $('.btn-group-vertical').append('<button class= id='+i+'>' + item + '</button>');
+//                }
+//            } else {
+//                $('.btn-group-vertical').html("<li class='menu'>No menu</li>");
+//            }
+//        }
+        function loadTest(){
+
+            $('#word').html(allData[localStorage.currentWord][1].toString());
+            $('#answersList').html('');
+            if (!allData.length < 1) {
+                for (var i = 0; i < 5; i++) {
+                    var item;
+                    if(localStorage.currentWord >= i)
+                    {
+                        item = localStorage.currentWord - i;
+                    }
+                    else{
+                        item = allData.length - i-1;
+                    }
+                    $('#answersList').append('<button id='+item+' class="answer" onClick="load(this.id)">'+allData[item][2]+'</button>');
+                }
+                var a=parseInt(localStorage.currentWord)+1;
+                localStorage.setItem("currentWord", a);
+            } else {
+                $('.btn-group-vertical').html("<p class='answersList'>No uestions</p>");
+            }
+        }
+
+</script>
+<div id="header">
 </div>
 <div class="row">
-<div class="col-md-4">
-<p> <%=data%> </p>
+    <h1 class="col-lg-12"><%=pageInfo%> </h1>
 </div>
+<div class="row">
+    <div class="col-md-4" id="ask">
+        <div id="word">Word</div>
+    </div>
+    <ul class="col-md-4" id="answersList">
+        <p class="answer">Поздравляем, все задания выполнены!</p>
+    </ul>
 </div>
