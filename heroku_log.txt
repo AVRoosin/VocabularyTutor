@@ -1,0 +1,103 @@
+2014-06-22T10:07:53.467452+00:00 app[web.1]: [90mGET /style.css [36m304 [90m1ms[0m
+2014-06-22T10:07:53.637422+00:00 app[web.1]: [90mGET /vendor/bower_components/bootstrap/dist/js/bootstrap.min.js [36m304 [90m2ms[0m
+2014-06-22T10:07:53.612369+00:00 app[web.1]: [90mGET /vendor/bower_components/jquery/dist/jquery.min.js [36m304 [90m3ms[0m
+2014-06-22T10:07:53.632800+00:00 app[web.1]: [90mGET /vendor/bower_components/normalize.css/normalize.css [36m304 [90m3ms[0m
+2014-06-22T10:07:53.817022+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/normalize.css/normalize.css" host=heroku-exp.herokuapp.com request_id=2947db61-f3cc-4c65-85b0-576462e62ef8 fwd="77.222.102.125" dyno=web.1 connect=1ms service=4ms status=200 bytes=8072
+2014-06-22T10:07:53.621864+00:00 app[web.1]: [90mGET /vendor/bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m2ms[0m
+2014-06-22T10:07:53.635601+00:00 app[web.1]: [90mGET /style.css [32m200 [90m3ms - 64b[0m
+2014-06-22T10:07:53.817931+00:00 app[web.1]: [90mGET /vendor/bower_components/normalize.css/normalize.css [32m200 [90m2ms - 7.6kb[0m
+2014-06-22T10:07:53.962452+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/jquery/dist/jquery.min.js" host=heroku-exp.herokuapp.com request_id=110d2d88-86a3-4e78-99c2-6e9edf19f731 fwd="77.222.102.125" dyno=web.1 connect=1ms service=13ms status=200 bytes=84570
+2014-06-22T10:07:53.972556+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css" host=heroku-exp.herokuapp.com request_id=962a90e2-5f84-41f3-b7d1-49506c4ce6ac fwd="77.222.102.125" dyno=web.1 connect=1
+ms service=7ms status=200 bytes=100252
+2014-06-22T10:07:53.990278+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js" host=heroku-exp.herokuapp.com request_id=e704750b-6ce7-4872-a33f-5e536dadd3da fwd="77.222.102.125" dyno=web.1 connect=1ms service=5ms status=200 bytes=29400
+2014-06-22T10:07:53.960836+00:00 app[web.1]: [90mGET /vendor/bower_components/jquery/dist/jquery.min.js [32m200 [90m7ms - 82.3kb[0m
+2014-06-22T10:07:53.988481+00:00 app[web.1]: [90mGET /vendor/bower_components/bootstrap/dist/js/bootstrap.min.js [32m200 [90m2ms - 28.43kb[0m
+2014-06-22T10:07:53.969880+00:00 app[web.1]: [90mGET /vendor/bower_components/bootstrap/dist/css/bootstrap.min.css [32m200 [90m2ms - 97.62kb[0m
+2014-06-22T10:28:59.736267+00:00 heroku[router]: at=info method=GET path="/wordTest" host=heroku-exp.herokuapp.com request_id=d62017b0-1181-4f58-96a7-083a925dbe44 fwd="77.222.102.125" dyno=web.1 connect=0ms service=16ms status=304 bytes=128
+2014-06-22T10:28:59.927153+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/jquery/dist/jquery.min.js" host=heroku-exp.herokuapp.com request_id=f9c19d28-3480-4601-801e-4a9deb6e618f fwd="77.222.102.125" dyno=web.1 connect=1ms service=4ms status=304 bytes=239
+2014-06-22T10:28:59.736045+00:00 app[web.1]: [90mGET /wordTest [36m304 [90m10ms[0m
+2014-06-22T10:29:00.098230+00:00 heroku[router]: at=info method=GET path="/ven
+dor/bower_components/bootstrap/dist/css/bootstrap.min.css" host=heroku-exp.herokuapp.com request_id=5ddeade2-21bf-4ef4-88a3-d19d69210a42 fwd="77.222.102.125" dyno=web.1 connect=1ms service=18ms status=304 bytes=239
+2014-06-22T10:29:00.098103+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/normalize.css/normalize.css" host=heroku-exp.herokuapp.com request_id=15b837b2-0a58-4d63-a62a-12749a990e9b fwd="77.222.102.125" dyno=web.1 connect=1ms service=17ms status=304 bytes=238
+2014-06-22T10:29:00.092330+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js" host=heroku-exp.herokuapp.com request_id=cab93391-0765-4ef8-bd29-14d9937b154e fwd="77.222.102.125" dyno=web.1 connect=1ms service=12ms status=304 bytes=239
+2014-06-22T10:29:00.087926+00:00 heroku[router]: at=info method=GET path="/style.css" host=heroku-exp.herokuapp.com request_id=741f3a30-1888-4c79-b102-1c5dba1ad19c fwd="77.222.102.125" dyno=web.1 connect=0ms service=10ms status=304 bytes=236
+2014-06-22T10:29:00.129192+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/jquery/dist/jquery.min.map" host=heroku-exp.herokuapp.com request_id=fa04ef3c-d4b2-4543-b304-ff263ddab58b fwd="77.222.102.125" dyno=web.1 connect=1ms service=6ms status=304 bytes=240
+2014-06-22T10:29:00.129510+00:00 app[web.1]: [90mGET /vendor/bower_components/jquery/dist/jquery.min.map [36m304 [90m3ms[0m
+2014-06-22T10:28:59.928993+00:00 app[web.1]: [90mGET /vendor/bower_components/jquery/dist/jquery.min.js [36m304 [90m2ms[0m
+2014-06-22T10:29:00.086307+00:00 app[web.1]: [90mGET /style.css [36m304 [90m5ms[0m
+2014-06-22T10:29:00.097349+00:00 app[web.1]: [90mGET /vendor/bower_components/normalize.css/normalize.css [36m304 [90m9ms[0m
+2014-06-22T10:29:00.095499+00:00 app[web.1]: [90mGET /vendor/bower_components/bootstrap/dist/js/bootstrap.min.js [36m304 [90m8ms[0m
+2014-06-22T10:29:00.098536+00:00 app[web.1]: [90mGET /vendor/bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m8ms[0m
+2014-06-22T11:32:26.853666+00:00 heroku[web.1]: State changed from up to down
+2014-06-22T11:32:26.853136+00:00 heroku[web.1]: Idling
+2014-06-22T11:32:31.296498+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-06-22T11:32:34.749436+00:00 heroku[web.1]: Process exited with status 143
+2014-06-22T17:52:41.609912+00:00 heroku[web.1]: Unidling
+2014-06-22T17:52:41.610236+00:00 heroku[web.1]: State changed from down to starting
+2014-06-22T17:52:46.307573+00:00 app[web.1]: [32minfo[39m: [app/app.js] Express server listening on port 28418
+2014-06-22T17:52:44.288986+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-06-22T17:52:46.691671+00:00 heroku[web.1]: State changed from starting to up
+2014-06-22T17:52:47.759090+00:00 heroku[router]: at=info method=GET path="/" host=heroku-exp.herokuapp.com request_id=4b66dfe8-2212-4798-bbfe-c4c00e4c0a14 fwd="77.222.112.125" dyno=web.1 connect=0ms service=97ms status=304 bytes=250
+2014-06-22T17:52:47.997662+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js" host=heroku-exp.herokuapp.com request_id=f98b0549-92ea-413e-a7b8-1f8eb6da3cb8 fwd="77.222.112.125" dyno=web.1 connect=1ms service=45ms status=304 bytes=239
+2014-06-22T17:52:47.755635+00:00 app[web.1]: [90mGET / [36m304 [90m78ms[0m
+2014-06-22T17:52:48.021141+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/jquery/dist/jquery.min.js" host=heroku-exp.herokuapp.com request_id=052f8f76-5d3a-42fa-aa09-1a6ae306ce1d fwd="77.222.112.125" dyno=web.1 connect=0ms service=73ms status=304 bytes=239
+2014-06-22T17:52:48.051993+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css" host=heroku-exp.herokuapp.com request_id=55cbf7da-fbaf-40cd-b5bd-c2af7a3b9af2 fwd="77.222.112.125" dyno=web.1 connect=4ms service=84ms status=304 bytes=239
+2014-06-22T17:52:48.053016+00:00 heroku[router]: at=info method=GET path="/vendor/bower_components/normalize.css/normalize.css" host=heroku-exp.herokuapp.com request_id=4260f0eb-f9c9-4337-a8af-3bc938c1373c fwd="77.222.112.125" dyno=web.1 connect=2ms service=90ms status=304 bytes=238
+2014-06-22T17:52:48.038137+00:00 heroku[router]: at=info method=GET path="/style.css" host=heroku-exp.herokuapp.com request_id=d3c02cb9-dc6f-40bd-89b6-9e1d343096b4 fwd="77.222.112.125" dyno=web.1 connect=1ms service=78ms status=304 bytes=236
+2014-06-22T17:52:48.008139+00:00 app[web.1]: [90mGET /vendor/bower_components/bootstrap/dist/js/bootstrap.min.js [36m304 [90m52ms[0m
+2014-06-22T17:52:48.036902+00:00 app[web.1]: [90mGET /style.css [36m304 [90m10ms[0m
+2014-06-22T17:52:48.050781+00:00 app[web.1]: [90mGET /vendor/bower_components/normalize.css/normalize.css [36m304 [90m18ms[0m
+2014-06-22T17:52:48.047082+00:00 app[web.1]: [90mGET /vendor/bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m16ms[0m
+2014-06-22T17:52:48.024609+00:00 app[web.1]: [90mGET /vendor/bower_components/jquery/dist/jquery.min.js [36m304 [90m56ms[0m
+2014-06-22T17:52:50.354275+00:00 heroku[router]: at=info method=GET path="/stat" host=heroku-exp.herokuapp.com request_id=fb28f4b5-e33b-4d7e-9fac-d0c8dc858b7f fwd="77.222.112.125" dyno=web.1 connect=4ms service=8ms status=404 bytes=186
+2014-06-22T17:52:50.349638+00:00 app[web.1]: [90mGET /stat [33m404 [90m2ms[0m
+2014-06-22T18:03:25.766212+00:00 heroku[router]: at=info method=GET path="/stat" host=heroku-exp.herokuapp.com request_id=4e14b587-325f-42c2-95e3-a39fd41479c2 fwd="77.222.112.125" dyno=web.1 connect=1ms service=15ms status=404 bytes=186
+2014-06-22T18:03:25.758791+00:00 app[web.1]: [90mGET /stat [33m404 [90m13ms[0m
+2014-06-22T18:08:22+00:00 heroku[slug-compiler]: Slug compilation started
+2014-06-22T18:08:49+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-06-22T18:08:49.389675+00:00 heroku[web.1]: State changed from up to starting
+2014-06-22T18:08:53.116511+00:00 app[web.1]:     throw err;
+2014-06-22T18:08:53.116517+00:00 app[web.1]:           ^
+2014-06-22T18:08:53.118505+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2014-06-22T18:08:53.118502+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2014-06-22T18:08:53.118498+00:00 app[web.1]: Error: Cannot find module './routes/wordtest'
+2014-06-22T18:08:53.118507+00:00 app[web.1]:     at require (module.js:380:17)
+2014-06-22T18:08:53.118509+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:9:12)
+2014-06-22T18:08:53.118512+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2014-06-22T18:08:53.115791+00:00 app[web.1]: 
+2014-06-22T18:08:53.118504+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2014-06-22T18:08:53.118516+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2014-06-22T18:08:53.118517+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2014-06-22T18:08:53.118511+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2014-06-22T18:08:53.118514+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2014-06-22T18:08:53.116275+00:00 app[web.1]: module.js:340
+2014-06-22T18:08:49.254198+00:00 heroku[api]: Release v51 created by avroosin@mail.ru
+2014-06-22T18:08:49.254198+00:00 heroku[api]: Deploy 720aeb7 by avroosin@mail.ru
+2014-06-22T18:08:54.405487+00:00 heroku[web.1]: State changed from starting to crashed
+2014-06-22T18:08:54.406096+00:00 heroku[web.1]: State changed from crashed to starting
+2014-06-22T18:08:54.399660+00:00 heroku[web.1]: Process exited with status 8
+2014-06-22T18:08:51.770604+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-06-22T18:08:57.305820+00:00 app[web.1]: 
+2014-06-22T18:08:57.306288+00:00 app[web.1]: module.js:340
+2014-06-22T18:08:57.306421+00:00 app[web.1]:     throw err;
+2014-06-22T18:08:57.306435+00:00 app[web.1]:           ^
+2014-06-22T18:08:57.308319+00:00 app[web.1]: Error: Cannot find module './routes/wordtest'
+2014-06-22T18:08:57.308324+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2014-06-22T18:08:57.308323+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2014-06-22T18:08:57.308328+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:9:12)
+2014-06-22T18:08:57.308321+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2014-06-22T18:08:57.308335+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2014-06-22T18:08:57.308330+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2014-06-22T18:08:57.308327+00:00 app[web.1]:     at require (module.js:380:17)
+2014-06-22T18:08:57.308333+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2014-06-22T18:08:57.308332+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2014-06-22T18:08:57.308337+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2014-06-22T18:08:58.505547+00:00 heroku[web.1]: State changed from starting to crashed
+2014-06-22T18:08:56.099430+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-06-22T18:08:58.491006+00:00 heroku[web.1]: Process exited with status 8
+2014-06-22T18:09:09.666765+00:00 heroku[web.1]: Process exited with status 143
+2014-06-22T18:09:07.246203+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-06-22T18:09:24.365529+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=heroku-exp.herokuapp.com request_id=efcfe7ef-c139-4486-8962-d65fb0e8fa22 fwd="77.222.112.125" dyno= connect= service= status=503 bytes=
+2014-06-22T18:09:25.066329+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=heroku-exp.herokuapp.com request_id=596522ec-a586-4009-9801-ee75ae5e7690 fwd="77.222.112.125" dyno= connect= service= status=503 bytes=
+2014-06-22T18:09:38.247581+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/stat" host=heroku-exp.herokuapp.com request_id=8d548774-b708-4997-b820-1937f4283e25 fwd="77.222.112.125" dyno= connect= service= status=503 bytes=
+2014-06-22T18:09:38.776455+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=heroku-exp.herokuapp.com request_id=57c0fece-2082-4f2e-934f-2196ff378ac4 fwd="77.222.112.125" dyno= connect= service= status=503 bytes=
